@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIT" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="hr"/>
+                <element label="Facilities" sequence="1" value="facilities"/>
+                <element label="Legal" sequence="2" value="legal"/>
+                <element label="Academic Affairs" sequence="3" value="AA"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal1" label="What needed" mandatory="true" max_length="40" name="u_choice_7" type="string">
+            <choice>
+                <element label="Human Resources 1" sequence="0" value="hr1"/>
+                <element label="Human Resources 2" sequence="1" value="hr2"/>
+                <element label="Facilities 1" sequence="2" value="facilities1"/>
+                <element label="Facilities 2" sequence="3" value="facilities 2"/>
+                <element label="Legal 1" sequence="4" value="legal1"/>
+                <element label="Legal 2" sequence="5" value="legal2"/>
+                <element label="Academic Affairs 1" sequence="6" value="AA1"/>
+                <element label="Academic Affairs 2" sequence="7" value="AA2"/>
+            </choice>
+        </element>
+        <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_6" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_3" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="What needed" max_length="32" name="u_reference_5" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>
